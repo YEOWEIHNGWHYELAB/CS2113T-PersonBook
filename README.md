@@ -5,4 +5,4 @@ PersonBook is a CLI app for keeping track of persons.
 
 ### Credits
 
-Initial version of the product was created as a stripped-down version of se-edu/addressbook-level2 by Dr. Damith C Rajapakse
+Initial version of this codebase was created as a stripped-down version of se-edu/addressbook-level2 by [Dr. Damith C Rajapakse](https://github.com/damithc)
