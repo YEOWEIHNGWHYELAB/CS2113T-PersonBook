@@ -51,7 +51,7 @@ public class PersonBook {
      */
     public void setLastShownList(List<Person> listInResult) {
         if (listInResult != null) {
-            lastShownList = listInResult;
+            lastShownList = listInResult; // Last shown list is useless here... It is not even used at all after assigning...
         }
     }
 

@@ -49,12 +49,12 @@ public class Main {
 
     /** Reads the user command and executes it, until the user issues the exit command.  */
     private void runCommandLoopUntilExitCommand() {
-        Command command;
-        do {
+        Command command; // Declaring variale of Type Command NOT instantiating... We aren't instantiating a new object!
+        do { // Execute the do part first.
             String userCommandText = ui.getUserCommand();
             command = new Parser().parseCommand(userCommandText);
             CommandResult result = executeCommand(command);
-            personBook.setLastShownList(result.getRelevantPersons());
+            personBook.setLastShownList(result.getRelevantPersons()); // Its a setter -> it will set the lastShownList it to the list of relevant person.
             ui.showResultToUser(result);
 
         } while (!ExitCommand.isExit(command));
